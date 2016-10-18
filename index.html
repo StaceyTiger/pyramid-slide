@@ -7,5 +7,15 @@
     <body>
         <!-- Page content goes here -->
 	<h1>Pyramid Slide!</h1>
+	How high?
+  	<input type="range" min="1" max="20" oninput="myFunction(this.value)">
+
+  	<p id="demo"></p>
+
+	<script>
+  	function myFunction(val) {
+    		document.getElementById("demo").innerHTML = val; 
+  	}
+  	</script>
     </body>
 </html>
